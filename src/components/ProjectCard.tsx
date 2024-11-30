@@ -2,12 +2,16 @@ import { Project } from "../app/definations/definations";
 
 export default function ProjectCard({ project }: { project: Project }) {
 	return (
-		<div className="flex rounded-md p-2 bg-red-500">
-			<div className="mr-2 bg-yellow-500">
+		<a
+			className="flex rounded-md p-2 cursor-pointer"
+			href={project.link}
+			target="_blank"
+		>
+			<div className="mr-2">
 				<img className="w-50" src={project.imgUrl} alt={project.name} />
 			</div>
 
-			<div className="flex-1 bg-blue-500 w-full h-full">
+			<div className="flex-1 w-full h-full">
 				<div className="text-titleForeground text-2xl font-semibold mb-2">
 					{project.name}
 				</div>
@@ -27,6 +31,6 @@ export default function ProjectCard({ project }: { project: Project }) {
 					))}
 				</div>
 			</div>
-		</div>
+		</a>
 	);
 }

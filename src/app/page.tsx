@@ -38,7 +38,7 @@ export default function Home() {
 
 				<div className="mb-10 md:mb-20">
 					<a
-						className="inline-flex py-2 px-4 md:py-2 md:px-6 bg-titleForeground text-background md:text-lg font-bold rounded-full p-1 cursor-pointer hover:bg-hoverBackground"
+						className="inline-flex py-2 px-4 md:py-2 md:px-6 bg-hoverBackground text-background md:text-lg font-bold rounded-full p-1 cursor-pointer hover:bg-titleForeground"
 						href="mailto:karanpatel4182@gmail.com"
 						target="_blank"
 					>
@@ -98,12 +98,12 @@ export default function Home() {
 				</div>
 			</div>
 
-			<div className="md:flex-col md:p-10 md:text-lg w-full h-fit bg-green-800">
+			<div className="md:flex-col md:p-10 md:text-lg w-full h-fit">
 				<div className="mb-16 md:mb-44">
 					<div className="md:hidden mb-3 text-2xl font-semibold text-titleForeground">
 						About
 					</div>
-					<div>{aboutDescription}</div>
+					<div className="font-semibold">{aboutDescription}</div>
 				</div>
 
 				<div>
