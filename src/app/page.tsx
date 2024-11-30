@@ -1,20 +1,22 @@
 import Image from "next/image";
 
+const name = "Karan Patel";
+const role = "Software Engineer";
+const description = `I build elegant, efficient, and meaningful solutions—because coding isn’t just what I do, it’s what I love.`;
+const aboutDescription = `I’m the developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability. Currently, I'm a Senior Front-End Engineer at Klaviyo, specializing in accessibility. I contribute to the creation and maintenance of UI components that power Klaviyo’s frontend, ensuring our platform meets web accessibility standards and best practices to deliver an inclusive user experience. In the past, I've had the opportunity to develop software across a variety of settings — from advertising agencies and large corporations to start-ups and small digital product studios. Additionally, I also released a comprehensive video course a few years ago, guiding learners through building a web app with the Spotify API. In my spare time, I’m usually climbing, reading, hanging out with my wife and two cats, or running around Hyrule searching for Korok seeds K o r o k s e e d s .`;
+
 export default function Home() {
 	return (
-		<div className="md:flex h-screen bg-background text-foreground font-sans p-5">
+		<div className="md:flex h-screen text-foreground font-sans p-5">
 			<div className="md:flex-col w-full md:p-10">
 				<div className="mb-8 md:mb-10">
 					<div className="text-5xl mb-2 md:text-7xl font-semibold text-titleForeground">
-						Karan Patel
+						{name}
 					</div>
 					<div className="text-2xl mb-3 md:text-3xl font-semibold text-titleForeground">
-						Software Engineer
+						{role}
 					</div>
-					<div className="md:text-lg md:w-96 font-semibold">
-						I build elegant, efficient, and meaningful solutions—because coding
-						isn’t just what I do, it’s what I love.
-					</div>
+					<div className="md:text-lg md:w-96 font-semibold">{description}</div>
 				</div>
 
 				<div className="mb-10 md:mb-20">
@@ -79,14 +81,18 @@ export default function Home() {
 				</div>
 			</div>
 
-			<div className="md:flex-col w-full bg-orange-500">
-				<div>
-					<div className="md:hidden">About</div>
-					<div>About Description ....</div>
+			<div className="md:flex-col md:p-10 md:text-lg w-full h-full bg-green-800">
+				<div className="mb-16 md:mb-44">
+					<div className="md:hidden mb-3 text-2xl font-semibold text-titleForeground">
+						About
+					</div>
+					<div>{aboutDescription}</div>
 				</div>
 
 				<div>
-					<div className="md:hidden">Projects</div>
+					<div className="md:hidden mb-3 text-2xl font-semibold text-titleForeground">
+						Projects
+					</div>
 					<div>Project Card here ...</div>
 					<div>Project Card here ...</div>
 				</div>
