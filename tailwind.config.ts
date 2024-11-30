@@ -17,7 +17,11 @@ export default {
 		},
 	},
 	plugins: [
-		function ({ addUtilities }) {
+		function ({
+			addUtilities,
+		}: {
+			addUtilities: (utilities: Record<string, any>) => void;
+		}) {
 			addUtilities({
 				"::selection": {
 					backgroundColor: "#00FFFF",
