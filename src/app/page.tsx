@@ -30,7 +30,15 @@ export default function Home() {
 
 				<div className="hidden md:block text-xl mb-40">
 					<div className={`text-titleForeground flex`}>
-						<div className="mr-2">----</div>
+						<div className="mr-3">
+							<Image
+								className=""
+								width={28}
+								height={28}
+								src={"arrow.svg"}
+								alt="Right Arrow Icon"
+							/>
+						</div>
 						<div>About</div>
 					</div>
 					<div className={`text-foreground`}>Projects</div>
