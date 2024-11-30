@@ -11,8 +11,9 @@ const aboutDescription = `I’m the developer passionate about crafting accessib
 const projects: Project[] = [
 	{
 		name: "Project 1",
-		description: "Project 1 Description",
-		imgUrl: "project1.png",
+		description:
+			"Web app for visualizing personalized Spotify data. View your top aritsts, top tracks, recently plated tracks, and detailed autdio information about each track. Create and save new playlist for recoomanded tracks based on your existing playslists and more.",
+		imgUrl: "project_1.gif",
 		link: "https://github.com",
 		tools: ["React", "TypeScript", "TailwindCSS"],
 	},
