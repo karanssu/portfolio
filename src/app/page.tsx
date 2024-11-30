@@ -19,11 +19,12 @@ export default function Home() {
 
 				<div className="mb-10 md:mb-20">
 					<a
-						className="py-2 px-8 bg-gray-100 text-gray-800 text-lg font-bold rounded-full p-1 cursor-pointer"
+						className="inline-flex py-2 px-6 bg-gray-100 text-gray-800 text-lg font-bold rounded-full p-1 cursor-pointer hover:bg-cyan-300"
 						href="mailto:karanpatel4182@gmail.com"
 						target="_blank"
 					>
-						Hire Me
+						<span className="mr-3">Hire Me</span>
+						<Image width={28} height={28} src={"hire.svg"} alt="Hire Me Icon" />
 					</a>
 				</div>
 
@@ -37,7 +38,7 @@ export default function Home() {
 
 				<div className="flex mb-20 md:mb-0">
 					<a
-						className="mr-8 bg-gray-100 rounded-full p-1 cursor-pointer"
+						className="mr-8 bg-gray-100 rounded-full p-1 cursor-pointer hover:bg-cyan-300"
 						href="https://github.com/karanssu"
 						target="_blank"
 					>
@@ -49,7 +50,7 @@ export default function Home() {
 						/>
 					</a>
 					<a
-						className="mr-8 bg-gray-100 rounded-full p-1 cursor-pointer"
+						className="mr-8 bg-gray-100 rounded-full p-1 cursor-pointer hover:bg-cyan-300"
 						href="https://www.linkedin.com/in/karan-patel-58b193304/"
 						target="_blank"
 					>
@@ -61,7 +62,7 @@ export default function Home() {
 						/>
 					</a>
 					<a
-						className="mr-8 bg-gray-100 rounded-full p-1 cursor-pointer"
+						className="mr-8 bg-gray-100 rounded-full p-1 cursor-pointer hover:bg-cyan-300"
 						href="mailto:karanpatel4182@gmail.com"
 						target="_blank"
 					>
