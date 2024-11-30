@@ -8,7 +8,7 @@ const aboutDescription = `I’m the developer passionate about crafting accessib
 
 export default function Home() {
 	return (
-		<div className="md:flex h-screen text-foreground font-sans p-5">
+		<div className="h-screen text-foreground font-sans p-5 md:flex">
 			<Head>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
@@ -25,12 +25,12 @@ export default function Home() {
 
 				<div className="mb-10 md:mb-20">
 					<a
-						className="inline-flex py-2 px-6 bg-titleForeground text-background text-lg font-bold rounded-full p-1 cursor-pointer hover:bg-hoverBackground"
+						className="inline-flex py-2 px-4 md:py-2 md:px-6 bg-titleForeground text-background md:text-lg font-bold rounded-full p-1 cursor-pointer hover:bg-hoverBackground"
 						href="mailto:karanpatel4182@gmail.com"
 						target="_blank"
 					>
 						<span className="mr-3">Hire Me</span>
-						<Image width={28} height={28} src={"hire.svg"} alt="Hire Me Icon" />
+						<img className="w-5 md:w-6" src={"hire.svg"} alt="Hire Me Icon" />
 					</a>
 				</div>
 
