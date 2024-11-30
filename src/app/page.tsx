@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
 	return (
 		<div className="md:flex h-screen bg-gray-800 text-gray-100 font-sans p-5">
@@ -23,14 +25,42 @@ export default function Home() {
 					<div className={`text-gray-400`}>Projects</div>
 				</div>
 
-				<div className="md:mb-80">
+				<div className="mb-5 md:mb-40">
 					<div>Hire me</div>
 				</div>
 
-				<div className="flex bg-red-500">
-					<div className="mr-5">Github</div>
-					<div className="mr-5">Linked In</div>
-					<div>Gmail</div>
+				<div className="flex mb-20 md:mb-0">
+					<a
+						className="mr-5 bg-gray-100 rounded-full p-1 cursor-pointer"
+						href="https://github.com/karanssu"
+						target="_blank"
+					>
+						<Image
+							width={30}
+							height={30}
+							src={"github.svg"}
+							alt="Github Icon"
+						/>
+					</a>
+					<a
+						className="mr-5 bg-gray-100 rounded-full p-1 cursor-pointer"
+						href="https://www.linkedin.com/in/karan-patel-58b193304/"
+						target="_blank"
+					>
+						<Image
+							width={30}
+							height={30}
+							src={"linkedin.svg"}
+							alt="Linkedin Icon"
+						/>
+					</a>
+					<a
+						className="mr-5 bg-gray-100 rounded-full p-1 cursor-pointer"
+						href="mailto:karanpatel4182@gmail.com"
+						target="_blank"
+					>
+						<Image width={30} height={30} src={"mail.svg"} alt="Mail Icon" />
+					</a>
 				</div>
 			</div>
 
