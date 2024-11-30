@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 
 const name = "Karan Patel";
@@ -8,6 +9,9 @@ const aboutDescription = `I’m the developer passionate about crafting accessib
 export default function Home() {
 	return (
 		<div className="md:flex h-screen text-foreground font-sans p-5">
+			<Head>
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
 			<div className="md:flex-col w-full md:p-10">
 				<div className="mb-8 md:mb-10">
 					<div className="text-5xl mb-2 md:text-7xl font-semibold text-titleForeground">
