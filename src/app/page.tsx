@@ -27,6 +27,42 @@ const projects: Project[] = [
 			"ESLint",
 		],
 	},
+	{
+		name: "Project 2",
+		description:
+			"Web app for visualizing personalized Spotify data. View your top aritsts, top tracks, recently plated tracks, and detailed autdio information about each track. Create and save new playlist for recoomanded tracks based on your existing playslists and more.",
+		imgUrl: "project_2.gif",
+		link: "https://github.com",
+		tools: [
+			"React",
+			"TypeScript",
+			"TailwindCSS",
+			"Spotify API",
+			"Chart.js",
+			"Vercel",
+			"Jest",
+			"React Testing Library",
+			"ESLint",
+		],
+	},
+	{
+		name: "Project 3",
+		description:
+			"Web app for visualizing personalized Spotify data. View your top aritsts, top tracks, recently plated tracks, and detailed autdio information about each track. Create and save new playlist for recoomanded tracks based on your existing playslists and more.",
+		imgUrl: "project_1.gif",
+		link: "https://github.com",
+		tools: [
+			"React",
+			"TypeScript",
+			"TailwindCSS",
+			"Spotify API",
+			"Chart.js",
+			"Vercel",
+			"Jest",
+			"React Testing Library",
+			"ESLint",
+		],
+	},
 ];
 
 export default function Home() {
@@ -120,8 +156,12 @@ export default function Home() {
 					<div className="md:hidden mb-3 text-2xl font-semibold text-titleForeground">
 						Projects
 					</div>
-					<div className="">
-						<ProjectCard project={projects[0]} />
+					<div>
+						{projects.map((project) => (
+							<div className="mb-3 md:mb-10">
+								<ProjectCard key={project.name} project={project} />
+							</div>
+						))}
 					</div>
 				</div>
 			</div>
