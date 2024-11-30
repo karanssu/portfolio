@@ -11,7 +11,7 @@ export default function Home() {
 					<div className="text-2xl mb-3 md:text-3xl font-semibold text-titleForeground">
 						Software Engineer
 					</div>
-					<div className="md:text-lg md:w-96">
+					<div className="md:text-lg md:w-96 font-semibold">
 						I build elegant, efficient, and meaningful solutions—because coding
 						isn’t just what I do, it’s what I love.
 					</div>
