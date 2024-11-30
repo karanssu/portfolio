@@ -15,7 +15,17 @@ const projects: Project[] = [
 			"Web app for visualizing personalized Spotify data. View your top aritsts, top tracks, recently plated tracks, and detailed autdio information about each track. Create and save new playlist for recoomanded tracks based on your existing playslists and more.",
 		imgUrl: "project_1.png",
 		link: "https://github.com",
-		tools: ["React", "TypeScript", "TailwindCSS"],
+		tools: [
+			"React",
+			"TypeScript",
+			"TailwindCSS",
+			"Spotify API",
+			"Chart.js",
+			"Vercel",
+			"Jest",
+			"React Testing Library",
+			"ESLint",
+		],
 	},
 ];
 

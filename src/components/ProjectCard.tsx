@@ -32,11 +32,11 @@ export default function ProjectCard({ project }: { project: Project }) {
 					/>
 				</div>
 
-				<div className="flex mt-3">
+				<div className="flex flex-wrap mt-3 w-80 md:w-[30rem]">
 					{project.tools.map((tool) => (
 						<div
 							key={tool}
-							className="rounded-full px-3 py-1 mr-2 text-background text-sm bg-hoverBackground"
+							className="rounded-full px-3 py-1 mr-2 mb-2 text-background text-sm bg-hoverBackground"
 						>
 							{tool}
 						</div>
