@@ -158,8 +158,8 @@ export default function Home() {
 					</div>
 					<div>
 						{projects.map((project) => (
-							<div className="mb-3 md:mb-10">
-								<ProjectCard key={project.name} project={project} />
+							<div key={project.name} className="mb-3 md:mb-10">
+								<ProjectCard project={project} />
 							</div>
 						))}
 					</div>
