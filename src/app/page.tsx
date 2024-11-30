@@ -27,9 +27,9 @@ export default function Home() {
 					<div>Hire me</div>
 				</div>
 
-				<div>
-					<div>Github</div>
-					<div>Linked In</div>
+				<div className="flex bg-red-500">
+					<div className="mr-5">Github</div>
+					<div className="mr-5">Linked In</div>
 					<div>Gmail</div>
 				</div>
 			</div>
