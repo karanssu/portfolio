@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
 	return (
-		<div className="md:flex h-screen bg-gray-800 text-gray-100 font-sans p-5">
+		<div className="md:flex h-screen bg-background text-gray-100 font-sans p-5">
 			<div className="md:flex-col w-full md:p-10">
 				<div className="mb-8 md:mb-10">
 					<div className="text-5xl mb-2 md:text-7xl font-semibold ">
@@ -50,7 +50,7 @@ export default function Home() {
 						/>
 					</a>
 					<a
-						className="mr-8 bg-gray-100 rounded-full p-1 cursor-pointer hover:bg-cyan-300"
+						className="mr-8 bg-gray-100 rounded-full p-1 cursor-pointer hover:bg-cyan-400"
 						href="https://www.linkedin.com/in/karan-patel-58b193304/"
 						target="_blank"
 					>
